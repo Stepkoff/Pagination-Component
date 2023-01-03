@@ -1,0 +1,39 @@
+$primary: #3388F1;
+html, body {
+    font-family: sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.countries {
+    width: 100%;
+    max-width: 700px;
+    &__title {
+        color: $primary;
+        margin-bottom: 5px;
+    }
+    &__content {
+        margin-bottom: 10px;
+        div {
+            border-bottom: 1px solid lightgray;
+            border-left: 1px solid lightgray;
+            border-right: 1px solid lightgray;
+            padding: 10px;
+            &:first-child {
+                border-radius: 5px 5px 0 0;
+                border-top: 1px solid lightgray;
+            }
+            &:last-child {
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }
+}
