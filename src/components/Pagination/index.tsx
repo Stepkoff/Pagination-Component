@@ -36,13 +36,13 @@ const Pagination:React.FC<IPaginationProps> = ({pages, setCurrentPage}) => {
       tempNumberOfPages = [1, dotsLeft, ...sliced];
     }
     else if (currentButton === dotsInitial) {
-      setCurrentButton(arrOfCurrentButtons[arrOfCurrentButtons.length -3] + 1);
+      setCurrentButton(arrOfCurrentButtons[arrOfCurrentButtons.length -3] + 2);
     }
     else if(currentButton === dotsLeft) {
-      setCurrentButton(arrOfCurrentButtons[3] - 2);
+      setCurrentButton(arrOfCurrentButtons[3] - 3);
     }
     else if(currentButton === dotsRight) {
-      setCurrentButton(arrOfCurrentButtons[3] + 2);
+      setCurrentButton(arrOfCurrentButtons[3] + 3);
     }
     setArrOfCurrentButtons(tempNumberOfPages)
     setCurrentPage(currentButton);

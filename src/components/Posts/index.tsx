@@ -5,7 +5,7 @@ import Loading from "../Loading";
 
 const Posts = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsLimit, setPostsLimit] = useState(10);
+  const [postsLimit, setPostsLimit] = useState(5);
   const {data, isLoading} = useGetPostsQuery({postsLimit, currentPage});
 
 
